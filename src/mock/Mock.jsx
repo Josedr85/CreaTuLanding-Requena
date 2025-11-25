@@ -2,7 +2,7 @@ const products = [
   {
     id: "1",
     name: "Guitarra Acústica Yamaha",
-    category: "Guitarras",
+    category: "promociones",
     price: 349.99,
     image: "../img/guitarra.png",
     description: "Guitarra acústica con sonido brillante y cálido",
@@ -11,7 +11,7 @@ const products = [
   {
     id: "2",
     name: "Piano Digital 88 Teclas",
-    category: "Teclados",
+    category: "ingresos",
     price: 899.99,
     image: "../img/piano.png",
     description: "Piano digital con teclas contrapesadas",
@@ -20,7 +20,7 @@ const products = [
   {
     id: "3",
     name: "Batería Acústica Completa",
-    category: "Percusión",
+    category: "promociones",
     price: 1299.99,
     image: "../img/bateria.png",
     description: "Set completo de 5 piezas con platillos",
@@ -29,7 +29,7 @@ const products = [
   {
     id: "4",
     name: "Bajo Eléctrico Fender",
-    category: "Bajos",
+    category: "mas vendidos",
     price: 599.99,
     image: "../img/bajo.png",
     description: "Bajo de 4 cuerdas con sonido profundo",
@@ -38,7 +38,7 @@ const products = [
   {
     id: "5",
     name: "Saxofón Alto",
-    category: "Vientos",
+    category: "promociones",
     price: 799.99,
     image: "../img/saxo.png",
     description: "Saxofón profesional con estuche incluido",
@@ -47,7 +47,7 @@ const products = [
   {
     id: "6",
     name: "Violín 4/4",
-    category: "Cuerdas",
+    category: "mas vendidos",
     price: 449.99,
     image: "../img/violin.png",
     description: "Violín tamaño completo con arco y estuche",
@@ -56,7 +56,7 @@ const products = [
   {
     id: "7",
     name: "Amplificador Marshall",
-    category: "Accesorios",
+    category: "ingresos",
     price: 499.99,
     image: "../img/amplificador.png",
     description: "Amplificador de 50W con efectos integrados",
@@ -65,7 +65,7 @@ const products = [
   {
     id: "8",
     name: "Micrófono Condensador",
-    category: "Accesorios",
+    category: "ingresos",
     price: 199.99,
     image: "../img/microfono.png",
     description: "Micrófono profesional para estudio",
@@ -74,7 +74,7 @@ const products = [
   {
     id: "9",
     name: "Guitarra Eléctrica Stratocaster",
-    category: "Guitarras",
+    category: "promociones",
     price: 749.99,
     image: "../img/guitarra2.png",
     description: "Guitarra eléctrica icónica con 3 pastillas",
@@ -83,7 +83,7 @@ const products = [
   {
     id: "10",
     name: "Sintetizador Analógico",
-    category: "Teclados",
+    category: "ingresos",
     price: 1499.99,
     image: "../img/sintetizador.png",
     description: "Sintetizador con 49 teclas y múltiples efectos",
@@ -92,7 +92,7 @@ const products = [
   {
     id: "11",
     name: "Cajón Peruano",
-    category: "Percusión",
+    category: "mas vendidos",
     price: 129.99,
     image: "../img/cajon.png",
     description: "Cajón artesanal de madera de alta calidad",
@@ -101,7 +101,7 @@ const products = [
   {
     id: "12",
     name: "Ukelele Soprano",
-    category: "Cuerdas",
+    category: "mas vendidos",
     price: 89.99,
     image: "../img/ukelele.png",
     description: "Ukelele perfecto para principiantes",

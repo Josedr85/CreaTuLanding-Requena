@@ -10,6 +10,7 @@ const Item = ({ prod }) => {
         borderRadius: "10px",
         paddingTop: "20px",
         backgroundColor: "rgb(209, 216, 218)",
+        marginTop: "50px",
       }}
     >
       <Card.Img variant="top" src={prod.image} />

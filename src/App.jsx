@@ -17,6 +17,10 @@ function App() {
           path="/"
           element={<ListItemContainer mensaje={"Bienvenido a MusicStore"} />}
         />
+        <Route
+          path="/category/:type"
+          element={<ListItemContainer mensaje={"Categoría:"} />}
+        />
         <Route path="/item/:id" element={<ItemDetailContainer />} />
         <Route path="*" element={<Error />} />
       </Routes>

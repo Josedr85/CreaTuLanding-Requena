@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidgetRI from "./CartWidgetRI";
+import { NavLink } from "react-router-dom";
 function NavBarBs() {
   return (
     <Navbar
@@ -14,7 +15,7 @@ function NavBarBs() {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="#home" style={{ fontSize: "2rem" }}>
+        <Navbar.Brand as={NavLink} to="/" style={{ fontSize: "2rem" }}>
           <img src="./logo.png" alt="Logo" style={{ width: "4rem" }} />
           MusicStore
         </Navbar.Brand>
@@ -28,14 +29,18 @@ function NavBarBs() {
               marginLeft: "20px",
             }}
           >
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#">Guitarras</Nav.Link>
-            <Nav.Link href="#">Teclados</Nav.Link>
-            <Nav.Link href="#">Percusión</Nav.Link>
-            <Nav.Link href="#">Bajos</Nav.Link>
-            <Nav.Link href="#">Vientos</Nav.Link>
-            <Nav.Link href="#">Cuerdas</Nav.Link>
-            <Nav.Link href="#">Sonido</Nav.Link>
+            <Nav.Link as={NavLink} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/category/promociones">
+              Promociones
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/category/ingresos">
+              Ingresos
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/category/mas vendidos">
+              Más Vendidos
+            </Nav.Link>
           </Nav>
           <CartWidgetRI counter={"8"} />
         </Navbar.Collapse>
