@@ -1,15 +1,5 @@
 const products = [
   {
-    id: "1",
-    name: "Guitarra Acústica Yamaha",
-    category: "promociones",
-    price: 349.99,
-    image: "../img/guitarra.png",
-    description: "Guitarra acústica con sonido brillante y cálido",
-    stock: 15,
-  },
-  {
-    id: "2",
     name: "Piano Digital 88 Teclas",
     category: "ingresos",
     price: 899.99,
@@ -18,7 +8,6 @@ const products = [
     stock: 8,
   },
   {
-    id: "3",
     name: "Batería Acústica Completa",
     category: "promociones",
     price: 1299.99,
@@ -27,7 +16,6 @@ const products = [
     stock: 5,
   },
   {
-    id: "4",
     name: "Bajo Eléctrico Fender",
     category: "mas vendidos",
     price: 599.99,
@@ -36,7 +24,6 @@ const products = [
     stock: 12,
   },
   {
-    id: "5",
     name: "Saxofón Alto",
     category: "promociones",
     price: 799.99,
@@ -45,7 +32,6 @@ const products = [
     stock: 7,
   },
   {
-    id: "6",
     name: "Violín 4/4",
     category: "mas vendidos",
     price: 449.99,
@@ -54,7 +40,6 @@ const products = [
     stock: 10,
   },
   {
-    id: "7",
     name: "Amplificador Marshall",
     category: "ingresos",
     price: 499.99,
@@ -63,7 +48,6 @@ const products = [
     stock: 18,
   },
   {
-    id: "8",
     name: "Micrófono Condensador",
     category: "ingresos",
     price: 199.99,
@@ -72,7 +56,6 @@ const products = [
     stock: 25,
   },
   {
-    id: "9",
     name: "Guitarra Eléctrica Stratocaster",
     category: "promociones",
     price: 749.99,
@@ -81,7 +64,6 @@ const products = [
     stock: 14,
   },
   {
-    id: "10",
     name: "Sintetizador Analógico",
     category: "ingresos",
     price: 1499.99,
@@ -90,7 +72,6 @@ const products = [
     stock: 6,
   },
   {
-    id: "11",
     name: "Cajón Peruano",
     category: "mas vendidos",
     price: 129.99,
@@ -99,7 +80,6 @@ const products = [
     stock: 20,
   },
   {
-    id: "12",
     name: "Ukelele Soprano",
     category: "mas vendidos",
     price: 89.99,

@@ -12,16 +12,31 @@ const ItemCount = ({ stock }) => {
     }
   };
 
+  const comprar = () => {
+    onAdd(count);
+  };
+
   return (
-    <div>
-      <button className="btn btn-danger" onClick={restar}>
-        -
-      </button>
-      <span className="btn">{count}</span>
-      <button className="btn btn-success" onClick={sumar}>
-        +
-      </button>
-    </div>
+    <>
+      {stock > 0 ? (
+        <div>
+          <button className="btn btn-danger" onClick={restar}>
+            -
+          </button>
+          <span className="btn">{count}</span>
+          <button className="btn btn-success" onClick={sumar}>
+            +
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={() => onAdd(count)}
+            disabled={stock === 0 || count === 0}
+          ></button>
+        </div>
+      ) : (
+        <p>Por el momento no hay stock disponibles</p>
+      )}
+    </>
   );
 };
 
