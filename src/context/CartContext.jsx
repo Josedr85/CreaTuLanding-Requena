@@ -1,10 +1,11 @@
 import { createContext, useEffect, useState } from "react";
 
-export const CartContext = createContext();
+// eslint-disable-next-line react-refresh/only-export-components
+export const CartContext = createContext(); // esto esta asi porque CartContext salia con un subrayado rojo  y no lo podia sacar
 
 const carritoLS = JSON.parse(localStorage.getItem("carrito")) || [];
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(carritoLS);
 
   useEffect(() => {
     localStorage.setItem("carrito", JSON.stringify(cart));
@@ -41,10 +42,6 @@ export const CartProvider = ({ children }) => {
     return cart.reduce((acc, prod) => (acc += prod.quantity * prod.price), 0);
   };
 
-  const totalConImpuestos = () => {
-    return cart.reduce((acc, prod) => (acc += prod.quantity * prod.price), 1.5);
-  };
-
   const cartQuantity = () => {
     return cart.reduce((acc, prod) => (acc += prod.quantity), 0);
   };
@@ -61,7 +58,15 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, clear, removeItem, addItem, itemQuantity }}
+      value={{
+        cart,
+        clear,
+        removeItem,
+        addItem,
+        itemQuantity,
+        total,
+        cartQuantity,
+      }}
     >
       {children}
     </CartContext.Provider>

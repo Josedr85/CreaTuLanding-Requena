@@ -26,6 +26,7 @@ const ItemDetail = ({ detalle }) => {
         marginTop: "20px",
         textAlign: "center",
       }}
+      className="item-height"
     >
       <h2>{detalle.name}</h2>
       <img src={detalle.image} alt={detalle.name} className="item-img" />

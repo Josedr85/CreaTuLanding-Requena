@@ -36,7 +36,7 @@ const CartView = () => {
             }}
           >
             <img
-              src={compra.img}
+              src={compra.image}
               alt={compra.name}
               style={{ width: "10rem" }}
             />

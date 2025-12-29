@@ -11,6 +11,7 @@ const Item = ({ prod }) => {
         paddingTop: "20px",
         backgroundColor: "rgb(209, 216, 218)",
         marginTop: "50px",
+        display: "flex",
       }}
     >
       <Card.Img variant="top" src={prod.image} />

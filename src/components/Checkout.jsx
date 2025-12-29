@@ -62,16 +62,13 @@ const Checkout = () => {
         </div>
       ) : (
         <div>
-          <h1>Complete por favor los datos</h1>
+          <h1 className="txt-form">Complete por favor los datos</h1>
           {error && (
             <span style={{ color: "grey", fontWeight: "bold" }}>{error}</span>
           )}
-          <form
-            className="p-4 border rounded shadow-sm bg-light"
-            onSubmit={finalizarCompra}
-          >
+          <form className="form" onSubmit={finalizarCompra}>
             <input
-              className="form-control"
+              className="form-control input"
               name="name"
               type="text"
               placeholder="Ingrese su nombre"

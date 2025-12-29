@@ -11,7 +11,7 @@ body {
 
 .grid-card {
   display: grid;
-  grid-template-columns: 500px 500px 500px;
+  grid-template-columns: 380px 380px 380px;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -27,7 +27,7 @@ h2 {
 }
 
 .item-img {
-  width: 400px;
+  width: 300px;
   margin-top: 30px;
 }
 
@@ -40,6 +40,26 @@ h2 {
 .item-price {
   font-size: 22px;
   font-weight: 600;
+}
+
+.form {
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 500px;
+  height: 20px;
+}
+
+.txt-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-control {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
 }
 
 @media (max-width: 1024px) {

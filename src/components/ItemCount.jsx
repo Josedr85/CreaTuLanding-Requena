@@ -1,5 +1,5 @@
 import { useState } from "react";
-const ItemCount = ({ stock }) => {
+const ItemCount = ({ stock, onAdd }) => {
   const [count, setCount] = useState(1);
   const sumar = () => {
     if (count < stock) {
@@ -27,11 +27,14 @@ const ItemCount = ({ stock }) => {
           <button className="btn btn-success" onClick={sumar}>
             +
           </button>
+
           <button
             className="btn btn-primary"
-            onClick={() => onAdd(count)}
-            disabled={stock === 0 || count === 0}
-          ></button>
+            onClick={comprar}
+            disabled={stock === 0}
+          >
+            Comprar
+          </button>
         </div>
       ) : (
         <p>Por el momento no hay stock disponibles</p>

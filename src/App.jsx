@@ -27,8 +27,8 @@ function App() {
             element={<ListItemContainer mensaje={"Categoría:"} />}
           />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/cart" element={CartContainer} />
-          <Route path="/checkout" element={Checkout} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </CartProvider>

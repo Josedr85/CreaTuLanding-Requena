@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     name: "Piano Digital 88 Teclas",
     category: "ingresos",
